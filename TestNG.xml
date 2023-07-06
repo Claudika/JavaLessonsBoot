@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite">
+    <test name="Test">
+        <groups>
+            <run>
+                <include name="unit"/>
+                <exclude name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testNg001.anotations"></class>
+            <class name="testNg001.Test2"/>
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="testNg001.Test2"/>
+        </classes>
+
+    </test>
+</suite>

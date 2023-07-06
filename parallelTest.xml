@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests">
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="Selenium001.parallelTest" />
+        </classes>
+    </test>
+    <test name="edge Test">
+        <parameter name="browser" value="Edge" />
+        <classes>
+            <class name="Selenium001.parallelTest" />
+        </classes>
+    </test>
+<!--    <test name="Safari Test">-->
+<!--        <parameter name="browser" value="safari" />-->
+<!--        <classes>-->
+<!--            <class name="selenium001.ParallelTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
